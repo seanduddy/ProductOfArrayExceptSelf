@@ -28,13 +28,13 @@ namespace ProductOfArrayExceptSelf
             //New output array, created to be the same length as input array.
             int[] product = new int[nums.Length];
 
-            //Loop through each key item in the dictionary.
+            //Loop through each element within the input array.
             for (int lPointer = 0; lPointer < nums.Length; lPointer++)
             {
-                //Initialising first element in pointer product, doesnt work if zero.
+                //Initialising nth element in product array, doesnt work if zero.
                 product[lPointer] = 1;
 
-                //Loop through each element within the wrray and start multiplying them together.
+                //Loop through each element within the array and start multiplying them together.
                 for (int rPointer = 0; rPointer < nums.Length; rPointer++)
                 {
                     //Skip if self.
