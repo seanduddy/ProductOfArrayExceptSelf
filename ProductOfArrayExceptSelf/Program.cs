@@ -25,20 +25,17 @@ namespace ProductOfArrayExceptSelf
             //Array for testing.
             int[] nums = { -1, 1, 0, -3, 3 };
 
-            int lPointer = new int();
-            int rPointer = new int();
-
             //New output array, created to be the same length as input array.
             int[] product = new int[nums.Length];
 
             //Loop through each key item in the dictionary.
-            for (lPointer = 0; lPointer < nums.Length; lPointer++)
+            for (int lPointer = 0; lPointer < nums.Length; lPointer++)
             {
                 //Initialising first element in pointer product, doesnt work if zero.
                 product[lPointer] = 1;
 
                 //Loop through each element within the wrray and start multiplying them together.
-                for (rPointer = 0; rPointer < nums.Length; rPointer++)
+                for (int rPointer = 0; rPointer < nums.Length; rPointer++)
                 {
                     //Skip if self.
                     if (lPointer != rPointer)
